@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,200;1,300;1,400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* NavBarr section */
+.NavBar {
+  height: 70px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.NavBar h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.NavBar h4:hover {
+  color: rgb(12, 7, 6);
+  transform: rotate(5deg);
+  
+}
+
+.nav-links li {
+  list-style: none;
+  margin-top: 10px;
+  font-weight: 900;
+
+}
+
+.nav-links li a:hover {
+  color: rgb(232, 232, 233);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.nav-icons a {
+  font-size: 20px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-icons input {
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(2, 2, 37)
+}
+.Menu-icon{
+  padding: 10px;
+  display: none;
+}
+.nav-icons a:hover {
+  color: rgb(142, 6, 6);
+
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255,0.2);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.sidebar li{
+list-style: none;
+ padding: 20px;
+ cursor: pointer;
+ color: rgb(21, 19, 19);
+ font-weight: 500;
+}
+
+.sidebar li:hover{
+  text-decoration: underline;
+}
+.sidebar-Menu-icon{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  margin-top: 20px;
+  color: rgb(8, 8, 8);
+}
+
+.nav-links-menu{
+  height: 100vh;
+  width: 100%;
+  border: 1px solid;
+  color: black;
+  background-color: antiquewhite;
+  display: none;
+
+}
+
+
+/* Cards-Section */
+
+.News-cards {
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  width: 50%;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.news-cards-img {
+  width: 50%;
+}
+.news-cards-img img{
+  height: 230px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+ .news-cards-text{
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+overflow-y: scroll;
+}
+.news-cards-text h3{
+font-size: 16px;
+font-weight: 600;
+}
+
+.News-cards a {
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgb(2, 2, 37);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(29, 28, 28, 0.23) 0px 3px 6px;
+}
+
+.News-cards a:hover {
+  color: rgb(227, 178, 170);
+}
+
+.Main-card {
+  height: 50vh;
+  width: 70%;
+  margin: 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  padding: 10px;
+}
+.card-img{
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+.card-img img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius:15px ;
+  border-bottom-left-radius: 15px;
+  
+}
+
+.card-text{
+width: 50%;
+padding: 20px;
+text-align: start;
+overflow: hidden;
+font-size: 12px;
+
+}
+.Main-card-button {
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgb(2, 2, 37);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(29, 28, 28, 0.23) 0px 3px 6px;
+}
+
+.Main-card-button:hover {
+  color: yellow;
+}
+
+
+@media screen and (max-width:808px){
+  
+  .nav-links{
+    display: none;
+  }
+  .Menu-icon{
+    display: inline-block;
+  }
+  .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Weather-form{
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .Main-card{
+    width: 100%;
+    margin: 0;
+    margin-top:10px;
+    height: 40vh;
+  }
+  .News-cards{
+    display: inline;
+  }
+  .cards{
+    width: 100%;
+  }
+  .weather-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .notification{
+    display: none;
+  }
+}
+
+@media screen and (max-width:670px){
+  .notification{
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-icons form{
+display: flex; 
+ }
+ .nav-icons input{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+ }
+ .NavBar h4{
+  font-size: 14px;
+ }
+}
